@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" MustUnderstand="df">
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+  <am:AuthoringMetadata>
+    <am:CreatedBy>
+      <am:Name>SSDTRS</am:Name>
+      <am:Version>17.7.34202.233</am:Version>
+    </am:CreatedBy>
+    <am:UpdatedBy>
+      <am:Name>SSDTRS</am:Name>
+      <am:Version>17.7.34202.233</am:Version>
+    </am:UpdatedBy>
+    <am:LastModifiedTimestamp>2023-10-23T13:50:03.8009815Z</am:LastModifiedTimestamp>
+  </am:AuthoringMetadata>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -9,7 +20,7 @@
         <ConnectString>Data Source=CHARLIETRAPLORD;Initial Catalog=ReportServer</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
-      <rd:SecurityType>None</rd:SecurityType>
+      <rd:SecurityType>Integrated</rd:SecurityType>
       <rd:DataSourceID>397994c0-3c16-4bda-8ed1-ebaf0443f669</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -55,7 +66,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>TESTREPORT</Value>
+                    <Value>TESTREPORTs</Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
                       <FontSize>24pt</FontSize>
@@ -68,6 +79,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.42in</Height>
+            <Width>5in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -109,6 +121,7 @@
                               </Paragraphs>
                               <rd:DefaultName>EmpName</rd:DefaultName>
                               <Height>0.27in</Height>
+                              <Width>5in</Width>
                               <Style>
                                 <FontFamily />
                                 <PaddingLeft>2pt</PaddingLeft>
@@ -151,6 +164,7 @@
                                                 </Paragraphs>
                                                 <rd:DefaultName>Department</rd:DefaultName>
                                                 <Height>0.24in</Height>
+                                                <Width>5in</Width>
                                                 <Style>
                                                   <FontFamily />
                                                   <PaddingLeft>2pt</PaddingLeft>
@@ -192,6 +206,7 @@
                                                                   </Paragraphs>
                                                                   <rd:DefaultName>JoiningDate</rd:DefaultName>
                                                                   <Height>0.21in</Height>
+                                                                  <Width>5in</Width>
                                                                   <Style>
                                                                     <FontFamily />
                                                                     <PaddingLeft>2pt</PaddingLeft>
@@ -239,8 +254,6 @@
                                                                                   </Paragraph>
                                                                                 </Paragraphs>
                                                                                 <rd:DefaultName>textbox2</rd:DefaultName>
-                                                                                <Height>0.22in</Height>
-                                                                                <Width>1in</Width>
                                                                                 <Style>
                                                                                   <Border>
                                                                                     <Color>LightGrey</Color>
@@ -279,8 +292,6 @@
                                                                                   </Paragraph>
                                                                                 </Paragraphs>
                                                                                 <rd:DefaultName>textbox3</rd:DefaultName>
-                                                                                <Height>0.22in</Height>
-                                                                                <Width>1in</Width>
                                                                                 <Style>
                                                                                   <Border>
                                                                                     <Color>LightGrey</Color>
@@ -322,8 +333,6 @@
                                                                                   </Paragraph>
                                                                                 </Paragraphs>
                                                                                 <rd:DefaultName>EmpID</rd:DefaultName>
-                                                                                <Height>0.21in</Height>
-                                                                                <Width>1in</Width>
                                                                                 <Style>
                                                                                   <Border>
                                                                                     <Color>LightGrey</Color>
@@ -360,8 +369,6 @@
                                                                                   </Paragraph>
                                                                                 </Paragraphs>
                                                                                 <rd:DefaultName>Designation</rd:DefaultName>
-                                                                                <Height>0.21in</Height>
-                                                                                <Width>1in</Width>
                                                                                 <Style>
                                                                                   <Border>
                                                                                     <Color>LightGrey</Color>
@@ -410,6 +417,9 @@
                                                                   </TablixRowHierarchy>
                                                                   <DataSetName>DataSet1</DataSetName>
                                                                   <Top>0.5in</Top>
+                                                                  <Height>0.43in</Height>
+                                                                  <Width>2in</Width>
+                                                                  <ZIndex>1</ZIndex>
                                                                   <Style>
                                                                     <FontFamily />
                                                                   </Style>
@@ -455,6 +465,9 @@
                                                   <BreakLocation>End</BreakLocation>
                                                 </PageBreak>
                                                 <Top>0.5in</Top>
+                                                <Height>0.93in</Height>
+                                                <Width>5in</Width>
+                                                <ZIndex>1</ZIndex>
                                                 <Style>
                                                   <FontFamily />
                                                 </Style>
@@ -500,6 +513,9 @@
                                 <BreakLocation>End</BreakLocation>
                               </PageBreak>
                               <Top>0.5in</Top>
+                              <Height>1.43in</Height>
+                              <Width>5in</Width>
+                              <ZIndex>1</ZIndex>
                               <Style>
                                 <FontFamily />
                                 <FontSize>12pt</FontSize>
@@ -546,6 +562,9 @@
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <Top>0.42in</Top>
+            <Height>1.93in</Height>
+            <Width>5in</Width>
+            <ZIndex>1</ZIndex>
             <Style>
               <FontSize>14pt</FontSize>
             </Style>
@@ -572,6 +591,6 @@
   </ReportParametersLayout>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Invalid</rd:ReportUnitType>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>72c34374-242d-4e07-a1af-0f70d101f3e2</rd:ReportID>
 </Report>
